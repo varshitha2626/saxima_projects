@@ -3,14 +3,13 @@ import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { navLinks } from '../data/data';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../assets/logo.jpeg';
-
-
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
+    const isHome = location.pathname === '/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,7 +28,11 @@ const Navbar = () => {
         <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
             <div className="container-custom flex justify-between items-center">
                 <Link to="/" className="flex items-center space-x-2">
-                    <img src={logo} alt="Saxima Project" className="h-16 w-auto" />
+                    <img
+                        src={logo}
+                        alt="Saxima Project"
+                        className={`h-16 w-auto transition-opacity duration-300 ${scrolled ? 'opacity-100' : 'opacity-0'}`}
+                    />
                 </Link>
 
                 {/* Desktop Menu */}
@@ -40,7 +43,7 @@ const Navbar = () => {
                             to={link.path}
                             className={`font-medium transition-colors hover:text-[#D4A017] ${location.pathname === link.path
                                 ? 'text-[#D4A017]'
-                                : scrolled ? 'text-[#4A4A4A]' : 'text-white'
+                                : (scrolled || !isHome) ? 'text-[#4A4A4A]' : 'text-white'
                                 }`}
                         >
                             {link.name}
@@ -48,7 +51,7 @@ const Navbar = () => {
                     ))}
                     <Link
                         to="/contact"
-                        className={`px-5 py-2 rounded-full font-medium transition-all ${scrolled
+                        className={`px-5 py-2 rounded-full font-medium transition-all ${(scrolled || !isHome)
                             ? 'bg-[#1F4E79] text-white hover:bg-opacity-90'
                             : 'bg-white text-[#1F4E79] hover:bg-gray-100'
                             }`}
@@ -63,9 +66,9 @@ const Navbar = () => {
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? (
-                        <X className={scrolled ? 'text-[#4A4A4A]' : 'text-white'} size={28} />
+                        <X className={(scrolled || !isHome) ? 'text-[#4A4A4A]' : 'text-white'} size={28} />
                     ) : (
-                        <Menu className={scrolled ? 'text-[#4A4A4A]' : 'text-white'} size={28} />
+                        <Menu className={(scrolled || !isHome) ? 'text-[#4A4A4A]' : 'text-white'} size={28} />
                     )}
                 </button>
             </div>

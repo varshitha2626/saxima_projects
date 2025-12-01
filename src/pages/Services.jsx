@@ -3,13 +3,19 @@ import Layout from '../components/Layout';
 import { services } from '../data/data';
 import { Check } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '../assets/logo.png';
 
 const Services = () => {
     return (
         <Layout>
             {/* Page Header */}
-            <div className="bg-[#1F4E79] text-white py-20">
+            <div className="bg-gray-50 text-[#1F4E79] py-16">
                 <div className="container-custom text-center">
+                    <img
+                        src={logo}
+                        alt="Saxima Project"
+                        className="h-48 mx-auto mb-6 object-contain"
+                    />
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -17,7 +23,7 @@ const Services = () => {
                     >
                         Our Services
                     </motion.h1>
-                    <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         Comprehensive real estate solutions tailored to your needs.
                     </p>
                 </div>

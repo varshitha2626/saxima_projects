@@ -19,6 +19,15 @@ export const commonAmenities = [
     'Party Hall at Terrace'
 ];
 
+// Amenities for Akshaya project (without Play Area and Party Hall)
+export const akshayaAmenities = [
+    'Car Parking',
+    'Power Backup 24x7',
+    'CCTV Surveillance',
+    'Lift',
+    'Bore'
+];
+
 export const services = [
     {
         id: 1,
@@ -69,26 +78,27 @@ export const projects = [
         id: 1,
         name: 'Saxima Gagana',
         status: 'Ready to Occupy',
-        description: '3BHK premium apartments with sizes ranging from 1575 sqft. East & West facing units with 2 flats per floor. Price starting from ₹1 crore 2 lakhs.',
+        description: '3BHK premium apartments with sizes ranging from 1575 sqft. East & West facing units with 2 flats per floor. 2nd and 3rd floors are available. Price starting from ₹1 crore 2 lakhs.',
         location: 'Narsingi',
         bhk: '3BHK',
         size: '1575 sqft',
         price: '₹1 Crore 2 Lakhs',
         possession: 'Ready to Occupy',
-        features: commonAmenities,
+        availableFloors: '2nd and 3rd floors',
+        features: akshayaAmenities,
         image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1000'
     },
     {
         id: 2,
         name: 'Akshaya',
-        status: 'Ongoing',
+        status: 'Ready to Occupy',
         description: '2 & 3 BHK apartments with sizes from 1140 sqft to 1405 sqft. East & West facing units. Price starts from ₹75 lakhs.',
         location: 'Alkapur Township, Rdno-04',
         bhk: '2 & 3 BHK',
         size: '1140 - 1405 sqft',
         price: 'Starts from ₹75 Lakhs',
-        possession: 'Under Construction',
-        features: commonAmenities,
+        // possession: '',
+        features: akshayaAmenities,
         image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000'
     },
     {
@@ -113,7 +123,7 @@ export const projects = [
         bhk: '2 BHK',
         size: '1195 sqft',
         price: '₹6300/- per sqft',
-        possession: '4 years',
+        possession: '1 year',
         features: commonAmenities,
         image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1000'
     },

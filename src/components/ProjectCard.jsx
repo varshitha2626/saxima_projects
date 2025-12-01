@@ -42,7 +42,7 @@ const ProjectCard = ({ project }) => {
                     ))}
                 </div>
 
-                <Button to="/projects" variant="outline" className="w-full group-hover:bg-[#1F4E79] group-hover:text-white group-hover:border-[#1F4E79]">
+                <Button to={`/projects/${project.id}`} variant="outline" className="w-full group-hover:bg-[#1F4E79] group-hover:text-white group-hover:border-[#1F4E79]">
                     View Details <ArrowRight size={16} className="ml-2" />
                 </Button>
             </div>

@@ -2,13 +2,19 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { CheckCircle, Users, Target, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
+import logo from '../assets/logo.png';
 
 const About = () => {
     return (
         <Layout>
             {/* Page Header */}
-            <div className="bg-[#1F4E79] text-white py-20">
+            <div className="bg-gray-50 text-[#1F4E79] py-16">
                 <div className="container-custom text-center">
+                    <img
+                        src={logo}
+                        alt="Saxima Project"
+                        className="h-48 mx-auto mb-6 object-contain"
+                    />
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -16,7 +22,7 @@ const About = () => {
                     >
                         About Us
                     </motion.h1>
-                    <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                         Building a legacy of trust and excellence in the real estate industry.
                     </p>
                 </div>
@@ -111,7 +117,7 @@ const About = () => {
                     </div>
                 </div>
             </section>
-        </Layout>
+        </Layout >
     );
 };
 
