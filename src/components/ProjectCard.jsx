@@ -19,7 +19,7 @@ const ProjectCard = ({ project }) => {
 
             <div className="p-6">
                 <h3 className="text-xl font-heading font-bold mb-2 text-[#1F4E79] group-hover:text-[#D4A017] transition-colors">
-                    {project.name}
+                    {project.name || "Project Name To Be Declared"}
                 </h3>
 
                 <div className="flex items-center text-gray-500 mb-4 text-sm">

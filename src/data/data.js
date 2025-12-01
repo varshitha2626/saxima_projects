@@ -8,6 +8,17 @@ export const navLinks = [
     { name: 'Contact', path: '/contact' },
 ];
 
+// Shared amenities for all projects
+export const commonAmenities = [
+    'Car Parking',
+    'Power Backup 24x7',
+    'CCTV Surveillance',
+    'Lift',
+    'Bore',
+    'Play Area at Ground Level',
+    'Party Hall at Terrace'
+];
+
 export const services = [
     {
         id: 1,
@@ -56,30 +67,68 @@ export const services = [
 export const projects = [
     {
         id: 1,
-        name: 'Saxima Heights',
-        status: 'Ongoing',
-        description: 'A premium residential complex offering luxury apartments with state-of-the-art amenities.',
-        location: 'City Center, Metropolis',
-        features: ['Swimming Pool', 'Gym', '24/7 Security', 'Green Parks'],
+        name: 'Saxima Gagana',
+        status: 'Ready to Occupy',
+        description: '3BHK premium apartments with sizes ranging from 1575 sqft. East & West facing units with 2 flats per floor. Price starting from ₹1 crore 2 lakhs.',
+        location: 'Narsingi',
+        bhk: '3BHK',
+        size: '1575 sqft',
+        price: '₹1 Crore 2 Lakhs',
+        possession: 'Ready to Occupy',
+        features: commonAmenities,
         image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1000'
     },
     {
         id: 2,
-        name: 'Saxima Plaza',
-        status: 'Completed',
-        description: 'A modern commercial hub designed for businesses to thrive, featuring office spaces and retail outlets.',
-        location: 'Business District, Metropolis',
-        features: ['High-speed Elevators', 'Ample Parking', 'Conference Rooms', 'Cafeteria'],
+        name: 'Akshaya',
+        status: 'Ongoing',
+        description: '2 & 3 BHK apartments with sizes from 1140 sqft to 1405 sqft. East & West facing units. Price starts from ₹75 lakhs.',
+        location: 'Alkapur Township, Rdno-04',
+        bhk: '2 & 3 BHK',
+        size: '1140 - 1405 sqft',
+        price: 'Starts from ₹75 Lakhs',
+        possession: 'Under Construction',
+        features: commonAmenities,
         image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000'
     },
     {
         id: 3,
-        name: 'Green Valley Villas',
-        status: 'Upcoming',
-        description: 'Exclusive gated community villas nestled in nature, providing a serene and peaceful lifestyle.',
-        location: 'Suburbs, Metropolis',
-        features: ['Private Garden', 'Clubhouse', 'Jogging Track', 'Smart Home Features'],
+        name: '', // Will display "Project Name To Be Declared"
+        status: 'Ongoing',
+        description: 'Semi-gated community with total 5 floors and 2BHK apartments. Sizes ranging from 1100 to 1315 sqft. East, West & North facing. Each floor has 5 flats. Price at ₹5800/- per sqft with 15 months possession.',
+        location: 'Neknampur, Manikonda',
+        bhk: '2 BHK',
+        size: '1100 - 1315 sqft',
+        price: '₹5800/- per sqft',
+        possession: '15 months',
+        features: commonAmenities,
         image: 'https://images.unsplash.com/photo-1613490493576-2f5033157979?auto=format&fit=crop&q=80&w=1000'
+    },
+    {
+        id: 4,
+        name: 'Shree Towers',
+        status: 'Upcoming',
+        description: 'Total 5 floors with 2BHK apartments sized at 1195 sqft. East and West facing with 4 flats per floor. Price at ₹6300/- per sqft with 4 year possession.',
+        location: 'Manikonda',
+        bhk: '2 BHK',
+        size: '1195 sqft',
+        price: '₹6300/- per sqft',
+        possession: '4 years',
+        features: commonAmenities,
+        image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1000'
+    },
+    {
+        id: 5,
+        name: '', // Will display "Project Name To Be Declared"
+        status: 'Upcoming',
+        description: 'Total 5 floors with 2 & 3 BHK apartments. Sizes from 1175 sqft to 1815 sqft. East & West facing with 4 flats each floor. Price at ₹5800/- per sqft with 12 months possession (3 months Grace Period).',
+        location: 'Venkateswara Colony, Manikonda',
+        bhk: '2 & 3 BHK',
+        size: '1175 - 1815 sqft',
+        price: '₹5800/- per sqft',
+        possession: '12 months (3 months Grace Period)',
+        features: commonAmenities,
+        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000'
     }
 ];
 
