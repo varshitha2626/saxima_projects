@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { navLinks } from '../data/data';
 import logo from '../assets/logo.jpeg';
 
@@ -72,17 +72,26 @@ const Footer = () => {
                         <li className="flex items-start">
                             <MapPin className="text-[#D4A017] mr-3 mt-1 flex-shrink-0" size={20} />
                             <span className="text-gray-300">
-                                123 Business Park, Sector 62,<br />
-                                Noida, Uttar Pradesh 201301
+                                Aryamitra Crest, Block A, Flat no: 101,<br />
+                                Sai Gautham Colony Rd, Puppalaguda,<br />
+                                Manikonda, Hyderabad, Telangana 500089
                             </span>
                         </li>
                         <li className="flex items-center">
                             <Phone className="text-[#D4A017] mr-3 flex-shrink-0" size={20} />
-                            <span className="text-gray-300">+91 98765 43210</span>
+                            <span className="text-gray-300">+91 90940 93333</span>
                         </li>
                         <li className="flex items-center">
                             <Mail className="text-[#D4A017] mr-3 flex-shrink-0" size={20} />
-                            <span className="text-gray-300">info@saximaproject.com</span>
+                            <span className="text-gray-300">saximaprojectsales@gmail.com</span>
+                        </li>
+                        <li className="flex items-start">
+                            <Clock className="text-[#D4A017] mr-3 mt-1 flex-shrink-0" size={20} />
+                            <div className="text-gray-300">
+                                <div className="font-semibold">Business Hours:</div>
+                                <div>Wednesday - Monday: 10:00 AM - 6:00 PM</div>
+                                <div>Tuesday: Closed</div>
+                            </div>
                         </li>
                     </ul>
                 </div>
