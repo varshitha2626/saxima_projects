@@ -8,24 +8,40 @@ import logo from '../assets/logo.png';
 const Contact = () => {
     return (
         <Layout>
-            {/* Page Header */}
-            <div className="bg-gray-50 text-[#1F4E79] py-16">
-                <div className="container-custom text-center">
-                    <img
-                        src={logo}
-                        alt="Saxima Project"
-                        className="h-48 mx-auto mb-6 object-contain"
-                    />
+            {/* Enhanced Page Header */}
+            <div className="relative bg-gradient-subtle text-[#1F4E79] py-20 overflow-hidden">
+                <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-[#D4A017]/10 to-transparent rounded-full blur-3xl" />
+                <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[#1F4E79]/10 to-transparent rounded-full blur-3xl" />
+
+                <div className="container-custom text-center relative z-10">
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                        className="mb-6"
+                    >
+                        <img
+                            src={logo}
+                            alt="Saxima Project"
+                            className="h-48 mx-auto object-contain drop-shadow-xl"
+                        />
+                    </motion.div>
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-5xl font-bold mb-4"
+                        transition={{ delay: 0.2 }}
+                        className="text-4xl md:text-5xl font-bold mb-4 gradient-text"
                     >
                         Contact Us
                     </motion.h1>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3 }}
+                        className="text-xl text-gray-600 max-w-2xl mx-auto"
+                    >
                         Get in touch with us for any inquiries or to schedule a site visit.
-                    </p>
+                    </motion.p>
                 </div>
             </div>
 
@@ -35,56 +51,78 @@ const Contact = () => {
                     <div>
                         <h2 className="text-3xl font-bold text-[#1F4E79] mb-8">Get In Touch</h2>
                         <div className="space-y-8">
-                            <div className="flex items-start">
-                                <div className="bg-white p-4 rounded-lg shadow-sm mr-6">
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                className="flex items-start group"
+                            >
+                                <div className="bg-gradient-to-br from-[#D4A017]/10 to-[#D4A017]/5 p-4 rounded-xl shadow-premium group-hover:shadow-premium-lg transition-all duration-300 mr-6">
                                     <MapPin className="text-[#D4A017]" size={24} />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-[#1F4E79] mb-2">Our Office</h3>
-                                    <p className="text-gray-600">
-                                        123 Business Park, Sector 62,<br />
-                                        Noida, Uttar Pradesh 201301
+                                    <p className="text-gray-600 leading-relaxed">
+                                        Aryamitra crest, Block A, Flat no: 101,<br />
+                                        Sai Gautham Colony Rd, Puppalaguda,<br />
+                                        Manikonda, Hyderabad, Telangana 500089
                                     </p>
                                 </div>
-                            </div>
+                            </motion.div>
 
-                            <div className="flex items-start">
-                                <div className="bg-white p-4 rounded-lg shadow-sm mr-6">
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.1 }}
+                                className="flex items-start group"
+                            >
+                                <div className="bg-gradient-to-br from-[#D4A017]/10 to-[#D4A017]/5 p-4 rounded-xl shadow-premium group-hover:shadow-premium-lg transition-all duration-300 mr-6">
                                     <Phone className="text-[#D4A017]" size={24} />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-[#1F4E79] mb-2">Phone</h3>
-                                    <p className="text-gray-600">+91 98765 43210</p>
-                                    <p className="text-gray-600">+91 12345 67890</p>
+                                    <p className="text-gray-600">+91 90940 93333</p>
                                 </div>
-                            </div>
+                            </motion.div>
 
-                            <div className="flex items-start">
-                                <div className="bg-white p-4 rounded-lg shadow-sm mr-6">
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.2 }}
+                                className="flex items-start group"
+                            >
+                                <div className="bg-gradient-to-br from-[#D4A017]/10 to-[#D4A017]/5 p-4 rounded-xl shadow-premium group-hover:shadow-premium-lg transition-all duration-300 mr-6">
                                     <Mail className="text-[#D4A017]" size={24} />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-[#1F4E79] mb-2">Email</h3>
-                                    <p className="text-gray-600">info@saximaproject.com</p>
-                                    <p className="text-gray-600">sales@saximaproject.com</p>
+                                    <p className="text-gray-600">saximaprojectsales@gmail.com</p>
                                 </div>
-                            </div>
+                            </motion.div>
 
-                            <div className="flex items-start">
-                                <div className="bg-white p-4 rounded-lg shadow-sm mr-6">
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: 0.3 }}
+                                className="flex items-start group"
+                            >
+                                <div className="bg-gradient-to-br from-[#D4A017]/10 to-[#D4A017]/5 p-4 rounded-xl shadow-premium group-hover:shadow-premium-lg transition-all duration-300 mr-6">
                                     <Clock className="text-[#D4A017]" size={24} />
                                 </div>
                                 <div>
                                     <h3 className="text-xl font-bold text-[#1F4E79] mb-2">Business Hours</h3>
-                                    <p className="text-gray-600">Monday - Saturday: 9:00 AM - 6:00 PM</p>
-                                    <p className="text-gray-600">Sunday: Closed</p>
+                                    <p className="text-gray-600">Wednesday - Monday: 10:00 AM - 6:00 PM</p>
+                                    <p className="text-gray-600">Tuesday: Closed</p>
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
 
-                    {/* Contact Form */}
-                    <div className="bg-white p-8 rounded-xl shadow-lg">
+                    {/* Enhanced Contact Form */}
+                    <div className="bg-gradient-subtle p-10 rounded-2xl shadow-premium-lg border border-white/50">
                         <h2 className="text-2xl font-bold text-[#1F4E79] mb-6">Send us a Message</h2>
                         <form className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">

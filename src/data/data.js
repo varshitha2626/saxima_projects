@@ -1,4 +1,9 @@
 import { Home, Building, Key, FileText, PenTool, Briefcase } from 'lucide-react';
+import akshayaImg from '../assets/Akshaya projects.jpg';
+import gaganImg from '../assets/saxima gagana.jpg';
+import shreeImg from '../assets/Shree_Towers.jpg';
+import nenkampurImg from '../assets/Neknampur project.jpg';
+import venkateswaraImg from '../assets/venkateswara colony project.jpg';
 
 export const navLinks = [
     { name: 'Home', path: '/' },
@@ -86,7 +91,7 @@ export const projects = [
         possession: 'Ready to Occupy',
         availableFloors: '2nd and 3rd floors',
         features: akshayaAmenities,
-        image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1000'
+        image: gaganImg
     },
     {
         id: 2,
@@ -99,12 +104,12 @@ export const projects = [
         price: 'Starts from ₹75 Lakhs',
         // possession: '',
         features: akshayaAmenities,
-        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000'
+        image: akshayaImg
     },
     {
         id: 3,
         name: '', // Will display "Project Name To Be Declared"
-        status: 'Ongoing',
+        status: 'Upcoming',
         description: 'Semi-gated community with total 5 floors and 2BHK apartments. Sizes ranging from 1100 to 1315 sqft. East, West & North facing. Each floor has 5 flats. Price at ₹5800/- per sqft with 15 months possession.',
         location: 'Neknampur, Manikonda',
         bhk: '2 BHK',
@@ -112,20 +117,20 @@ export const projects = [
         price: '₹5800/- per sqft',
         possession: '15 months',
         features: commonAmenities,
-        image: 'https://images.unsplash.com/photo-1613490493576-2f5033157979?auto=format&fit=crop&q=80&w=1000'
+        image: nenkampurImg
     },
     {
         id: 4,
         name: 'Shree Towers',
-        status: 'Upcoming',
+        status: 'Ongoing',
         description: 'Total 5 floors with 2BHK apartments sized at 1195 sqft. East and West facing with 4 flats per floor. Price at ₹6300/- per sqft with 4 year possession.',
         location: 'Manikonda',
         bhk: '2 BHK',
         size: '1195 sqft',
         price: '₹6300/- per sqft',
         possession: '1 year',
-        features: commonAmenities,
-        image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=1000'
+        features: akshayaAmenities,
+        image: shreeImg
     },
     {
         id: 5,
@@ -137,8 +142,8 @@ export const projects = [
         size: '1175 - 1815 sqft',
         price: '₹5800/- per sqft',
         possession: '12 months (3 months Grace Period)',
-        features: commonAmenities,
-        image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1000'
+        features: akshayaAmenities,
+        image: venkateswaraImg
     }
 ];
 
