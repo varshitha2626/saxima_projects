@@ -173,12 +173,13 @@ const Contact = () => {
             {/* Map Placeholder */}
             <section className="h-96 w-full bg-gray-200 relative">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.0688975472578!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1645432123456!5m2!1sen!2sin"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.2312738207424!2d78.36195037462723!3d17.400685302423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb958c9b1514e3%3A0xa22621d4410bb010!2sSaxima%20Projects%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1764957756664!5m2!1sen!2sin"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
                     allowFullScreen=""
                     loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
                     title="Office Location"
                 ></iframe>
             </section>

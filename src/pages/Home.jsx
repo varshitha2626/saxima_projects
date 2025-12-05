@@ -200,7 +200,7 @@ const Home = () => {
                         <div className="absolute top-0 right-0 w-64 h-64 bg-[#D4A017]/20 rounded-full -mr-16 -mt-16 blur-2xl" />
                         <div className="relative z-10">
                             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Find Your Dream Property?</h2>
-                            <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
                                 Contact us today to schedule a site visit or discuss your real estate requirements with our experts.
                             </p>
                             <Button to="/contact" variant="secondary" className="text-lg px-8 py-4">

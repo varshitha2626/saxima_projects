@@ -31,7 +31,10 @@ const Navbar = () => {
                     <img
                         src={logo}
                         alt="Saxima Project"
-                        className={`h-20 w-auto transition-opacity duration-300 ${(isHome || scrolled) ? 'opacity-100' : 'opacity-0'}`}
+                        className={`h-24 w-auto transition-all duration-300 ${(isHome || scrolled) ? 'opacity-100' : 'opacity-0'}`}
+                        style={{
+                            filter: (isHome && !scrolled) ? 'brightness(0) invert(1)' : 'none'
+                        }}
                     />
                 </Link>
 

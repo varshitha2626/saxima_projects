@@ -4,6 +4,9 @@ import gaganImg from '../assets/saxima gagana.jpg';
 import shreeImg from '../assets/Shree_Towers.jpg';
 import nenkampurImg from '../assets/Neknampur project.jpg';
 import venkateswaraImg from '../assets/venkateswara colony project.jpg';
+import saximaAdithiImg from '../assets/saxima adithi.png';
+import saximaSarayuImg from '../assets/saxima sarayu.png';
+
 
 export const navLinks = [
     { name: 'Home', path: '/' },
@@ -81,6 +84,32 @@ export const services = [
 export const projects = [
     {
         id: 1,
+        name: 'Saxima Adithi',
+        status: 'Completed',
+        description: '3BHK premium apartments with G+4 floors + 1 TDR. East facing units of 1535 sqft and North facing units of 1575 sqft. Each floor has 2 flats.',
+        location: 'Vinayaka Nagar, Puppalaguda, Manikonda',
+        bhk: '3 BHK',
+        size: '1535 sqft & 1575 sqft',
+        price: 'Sold Out',
+        possession: 'Completed',
+        features: akshayaAmenities,
+        image: saximaAdithiImg
+    },
+    {
+        id: 2,
+        name: 'Saxima Sarayu',
+        status: 'Completed',
+        description: 'Total 5 floors with 4 flats per floor. 2 BHK apartments of 1110 & 1075 sqft and 3 BHK apartments of 1620 & 1400 sqft. East & North facing units.',
+        location: 'LIC Colony, Puppalaguda, Manikonda',
+        bhk: '2 & 3 BHK',
+        size: '1075 - 1620 sqft',
+        price: 'Sold Out',
+        possession: 'Completed',
+        features: akshayaAmenities,
+        image: saximaSarayuImg,
+    },
+    {
+        id: 3,
         name: 'Saxima Gagana',
         status: 'Ready to Occupy',
         description: '3BHK premium apartments with sizes ranging from 1575 sqft. East & West facing units with 2 flats per floor. 2nd and 3rd floors are available. Price starting from ₹1 crore 2 lakhs.',
@@ -94,7 +123,7 @@ export const projects = [
         image: gaganImg
     },
     {
-        id: 2,
+        id: 4,
         name: 'Akshaya',
         status: 'Ready to Occupy',
         description: '2 & 3 BHK apartments with sizes from 1140 sqft to 1405 sqft. East & West facing units. Price starts from ₹75 lakhs.',
@@ -107,7 +136,7 @@ export const projects = [
         image: akshayaImg
     },
     {
-        id: 3,
+        id: 5,
         name: '', // Will display "Project Name To Be Declared"
         status: 'Upcoming',
         description: 'Semi-gated community with total 5 floors and 2BHK apartments. Sizes ranging from 1100 to 1315 sqft. East, West & North facing. Each floor has 5 flats. Price at ₹5800/- per sqft with 15 months possession.',
@@ -120,7 +149,7 @@ export const projects = [
         image: nenkampurImg
     },
     {
-        id: 4,
+        id: 6,
         name: 'Shree Towers',
         status: 'Ongoing',
         description: 'Total 5 floors with 2BHK apartments sized at 1195 sqft. East and West facing with 4 flats per floor. Price at ₹6300/- per sqft with 4 year possession.',
@@ -133,7 +162,7 @@ export const projects = [
         image: shreeImg
     },
     {
-        id: 5,
+        id: 7,
         name: '', // Will display "Project Name To Be Declared"
         status: 'Upcoming',
         description: 'Total 5 floors with 2 & 3 BHK apartments. Sizes from 1175 sqft to 1815 sqft. East & West facing with 4 flats each floor. Price at ₹5800/- per sqft with 12 months possession (3 months Grace Period).',
